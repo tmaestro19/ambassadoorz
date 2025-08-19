@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Ambassadoorz | Official Band Site</title>
+  <meta name="description" content="Ambassadoorz – 5–7 piece band for R&B, Top 40, worship, and more. Book us for Atlanta, Augusta, and North Carolina events." />
+  <style>
+    :root{
+      --primary:#e11d48; /* Red (rose-600) for brand */
+      --primary-700:#be123c;
+      --bg:#0b0b0f;
+      --card:#12121a;
+      --muted:#a1a1aa;
+      --text:#ffffff;
+      --ring: 0 0 0 3px rgba(225,29,72,.35);
+      --radius: 18px;
+      --shadow: 0 10px 30px rgba(0,0,0,.35);
+    }
+    *{box-sizing:border-box}
+    html,body{margin:0;background:linear-gradient(180deg,#0b0b10,#0a0a0e 60%,#0b0b10);color:var(--text);font-family:system-ui,-apple-system,Segoe UI,Roboto,Inter,Arial,sans-serif;line-height:1.6}
+    a{color:var(--primary);text-decoration:none}
+    a:hover{text-decoration:underline}
+    img{max-width:100%;display:block;border-radius:12px}
+    .container{width:min(1100px,92vw);margin-inline:auto}
+    .btn{display:inline-flex;align-items:center;gap:.6rem;background:var(--primary);color:#fff;padding:.85rem 1.15rem;border-radius:999px;font-weight:700;box-shadow:var(--shadow);border:1px solid rgba(255,255,255,.08)}
+    .btn:hover{filter:brightness(1.05)}
+    .btn.outline{background:transparent;border:1px solid #2b2b33;color:#fff}
+    .pill{display:inline-flex;align-items:center;gap:.5rem;background:rgba(225,29,72,.12);color:#fff;border:1px solid rgba(225,29,72,.35);padding:.35rem .7rem;border-radius:999px;font-size:.85rem}
+    header{position:sticky;top:0;z-index:50;background:rgba(11,11,15,.6);backdrop-filter:blur(10px);border-bottom:1px solid rgba(255,255,255,.06)}
+    .nav{display:flex;align-items:center;justify-content:space-between;padding:.7rem 0}
+    .brand{display:flex;align-items:center;gap:.75rem;font-weight:900;letter-spacing:.5px}
+    .logo{width:40px;height:40px;border-radius:10px;background:radial-gradient(80% 80% at 30% 20%,#fff 0%,#ffd1d9 20%,#e11d48 55%,#7f102a 100%);box-shadow:0 0 0 2px rgba(255,255,255,.06), 0 8px 25px rgba(225,29,72,.35)}
+    nav a{margin-left:1.2rem;color:#e9e9ee}
+    nav a:hover{color:#fff}
+    .hero{display:grid;grid-template-columns:1.1fr .9fr;gap:2rem;align-items:center;padding:2.5rem 0}
+    .hero h1{font-size:clamp(2rem,6vw,3.2rem);line-height:1.1;margin:.2rem 0 .6rem 0}
+    .accent{color:var(--primary)}
+    .card{background:linear-gradient(180deg,#12121a,#101017);border:1px solid rgba(255,255,255,.06);border-radius:var(--radius);padding:1.2rem;box-shadow:var(--shadow)}
+    .grid-3{display:grid;grid-template-columns:repeat(3,1fr);gap:1.2rem}
+    .grid-2{display:grid;grid-template-columns:repeat(2,1fr);gap:1.2rem}
+    .section{padding:2.2rem 0}
+    .section h2{font-size:clamp(1.4rem,3.8vw,2rem);margin:0 0 .6rem 0}
+    .muted{color:var(--muted)}
+    .list{list-style:none;padding:0;margin:0;display:grid;gap:.6rem}
+    .badge{display:inline-block;background:#1b1b24;border:1px solid #2d2d39;color:#c9c9d2;border-radius:999px;padding:.25rem .6rem;font-size:.8rem}
+    .shows li{display:flex;align-items:center;justify-content:space-between;gap:1rem;background:#12121a;border:1px solid #242432;border-radius:12px;padding:.8rem 1rem}
+    .shows strong{font-size:1rem}
+    .epk{display:grid;grid-template-columns:1fr 1fr;gap:1.2rem}
+    .gallery{display:grid;grid-template-columns:repeat(4,1fr);gap:.75rem}
+    .gallery img{aspect-ratio:4/3;object-fit:cover}
+    .contact form{display:grid;gap:.8rem}
+    input,textarea,select{width:100%;background:#0f0f16;border:1px solid #2b2b3a;color:#fff;border-radius:12px;padding:.8rem}
+    input:focus,textarea:focus,select:focus{outline:none;box-shadow:var(--ring)}
+    footer{border-top:1px solid rgba(255,255,255,.06);padding:2rem 0;color:#c9c9cf}
+    .sr-only{position:absolute;left:-9999px}
+    @media (max-width:900px){
+      .hero{grid-template-columns:1fr}
+      .grid-3{grid-template-columns:1fr}
+      .grid-2{grid-template-columns:1fr}
+      .epk{grid-template-columns:1fr}
+      .gallery{grid-template-columns:repeat(2,1fr)}
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container nav">
+      <div class="brand"><div class="logo" aria-hidden="true"></div><span style="font-size:1.1rem">Ambassadoorz</span></div>
+      <nav aria-label="Main">
+        <a href="#about">About</a>
+        <a href="#music">Music</a>
+        <a href="#shows">Shows</a>
+        <a href="#epk">EPK</a>
+        <a href="#contact" class="pill">Book Us</a>
+      </nav>
+    </div>
+  </header>
+
+  <section class="container hero">
+    <div>
+      <p class="pill" aria-label="Service area">Atlanta • Augusta • North Carolina</p>
+      <h1><span class="accent">Ambassadoorz</span> — Live Band for R&B • Top 40 • Worship</h1>
+      <p class="muted">A high‑energy 5–7 piece band delivering smooth R&B, chart‑topping hits, and heartfelt worship. Weddings, churches, corporate events, and festivals.</p>
+      <div style="display:flex;gap:.8rem;margin-top:1rem">
+        <a class="btn" href="#contact">Book the Band</a>
+        <a class="btn outline" href="#music">Hear a Sample</a>
+      </div>
+      <ul class="list" style="margin-top:1rem;grid-template-columns:repeat(3,auto);gap:.5rem;display:grid">
+        <li class="badge">Pro sound & IEM ready</li>
+        <li class="badge">Travel‑friendly</li>
+        <li class="badge">Setlist customization</li>
+      </ul>
+    </div>
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1459749411175-04bf5292ceea?q=80&w=1200&auto=format&fit=crop" alt="Ambassadoorz performing on stage" />
+      <p class="muted" style="margin:.5rem 0 0 0;font-size:.85rem">Hint: Replace this image URL with your band photo. (Right‑click → Copy image address / or upload to your host.)</p>
+    </div>
+  </section>
+
+  <section id="about" class="section">
+    <div class="container grid-2">
+      <div class="card">
+        <h2>About the Band</h2>
+        <p>Ambassadoorz blends seasoned musicianship with crowd‑focused showmanship. From classic R&B grooves and Top 40 anthems to uplifting worship sets, we bring excellence, tight arrangements, and a professional attitude to every stage.</p>
+        <ul class="list">
+          <li>Typical lineup: vocals, keys, guitar, bass, drums (+ optional horns)</li>
+          <li>Set lengths: 45–60 minute sets • full evening packages available</li>
+          <li>We provide PA/IEMs on request and coordinate with venue tech teams</li>
+        </ul>
+      </div>
+      <div class="card">
+        <h2>Featured Repertoire</h2>
+        <ul class="list">
+          <li>R&B & Soul: Bruno Mars, Beyoncé, Marvin Gaye, Maze ft. Frankie Beverly</li>
+          <li>Top 40 & Pop: Dua Lipa, The Weeknd, Ed Sheeran</li>
+          <li>Worship: Sinach — “Way Maker”, Elevation Worship — “The Blessing”</li>
+        </ul>
+        <p class="muted" style="margin-top:.5rem">We’ll tailor the setlist to your event and audience.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="music" class="section">
+    <div class="container">
+      <h2>Music & Media</h2>
+      <p class="muted">Drop in your audio links and videos below (YouTube, SoundCloud, Spotify, etc.).</p>
+      <div class="grid-3" style="margin-top:1rem">
+        <div class="card">
+          <h3 style="margin:0 0 .5rem 0">Live Demo</h3>
+          <div style="position:relative;padding-bottom:56.25%;height:0;overflow:hidden;border-radius:12px">
+            <iframe style="position:absolute;top:0;left:0;width:100%;height:100%;border:0" src="https://www.youtube.com/embed/dQw4w9WgXcQ" title="Ambassadoorz Live Demo" allowfullscreen></iframe>
+          </div>
+        </div>
+        <div class="card">
+          <h3 style="margin:0 0 .5rem 0">SoundCloud Sampler</h3>
+          <iframe width="100%" height="166" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/30846994&color=%23e11d48"></iframe>
+          <p class="muted" style="font-size:.85rem">Paste your SoundCloud track/playlist URL into their embed generator.</p>
+        </div>
+        <div class="card">
+          <h3 style="margin:0 0 .5rem 0">Spotify Playlist</h3>
+          <iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/37i9dQZF1DXcBWIGoYBM5M" width="100%" height="352" frameborder="0" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="shows" class="section">
+    <div class="container">
+      <h2>Upcoming Shows</h2>
+      <ul class="list shows" style="margin-top:.8rem">
+        <li>
+          <div>
+            <strong>Aug 30, 2025 — Atlanta, GA</strong>
+            <div class="muted">Centennial Park | 8:00 PM</div>
+          </div>
+          <a class="btn outline" href="#contact">Request Guest List</a>
+        </li>
+        <li>
+          <div>
+            <strong>Sep 14, 2025 — Augusta, GA</strong>
+            <div class="muted">Riverwalk Pavilion | 7:30 PM</div>
+          </div>
+          <a class="btn outline" href="#contact">VIP Inquiry</a>
+        </li>
+        <li>
+          <div>
+            <strong>Oct 5, 2025 — Raleigh, NC</strong>
+            <div class="muted">City Plaza | 7:00 PM</div>
+          </div>
+          <a class="btn outline" href="#contact">Tickets</a>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="epk" class="section">
+    <div class="container epk">
+      <div class="card">
+        <h2>Press & EPK</h2>
+        <p>Download our one‑sheet, stage plot, and tech rider. For booking, please include event date, location, budget, and expected audience size.</p>
+        <div style="display:flex;gap:.8rem;flex-wrap:wrap">
+          <a class="btn" href="#">Download EPK (PDF)</a>
+          <a class="btn outline" href="#">Stage Plot (PNG)</a>
+          <a class="btn outline" href="#">Tech Rider (PDF)</a>
+        </div>
+      </div>
+      <div class="card">
+        <h2>Highlights</h2>
+        <ul class="list">
+          <li>Opened for regional headliners and toured across GA & NC</li>
+          <li>Weddings, churches, corporate and city events</li>
+          <li>Professional backline, punctual load‑in, and MC services</li>
+        </ul>
+        <div class="gallery" style="margin-top:.8rem">
+          <img src="https://images.unsplash.com/photo-1470229722913-7c0e2dbbafd3?q=80&w=800&auto=format&fit=crop" alt="Band crowd shot" />
+          <img src="https://images.unsplash.com/photo-1503104834685-7205e8607eb9?q=80&w=800&auto=format&fit=crop" alt="Guitar closeup" />
+          <img src="https://images.unsplash.com/photo-1511192336575-5a79af67a629?q=80&w=800&auto=format&fit=crop" alt="Singer on stage" />
+          <img src="https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f?q=80&w=800&auto=format&fit=crop" alt="Drummer" />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="section contact">
+    <div class="container grid-2">
+      <div class="card">
+        <h2>Booking & Inquiries</h2>
+        <p class="muted">Use the form to request a quote. We typically reply within 24 hours.</p>
+        <form action="https://formspree.io/f/YOUR_FORMSPREE_ID" method="POST">
+          <label>
+            <span class="sr-only">Your Name</span>
+            <input name="name" type="text" placeholder="Your Name" required />
+          </label>
+          <label>
+            <span class="sr-only">Email</span>
+            <input name="email" type="email" placeholder="Email" required />
+          </label>
+          <label>
+            <span class="sr-only">Phone</span>
+            <input name="phone" type="tel" placeholder="Phone (optional)" />
+          </label>
+          <div class="grid-2">
+            <label>
+              <span class="sr-only">Event Date</span>
+              <input name="date" type="date" />
+            </label>
+            <label>
+              <span class="sr-only">City/State</span>
+              <input name="city" type="text" placeholder="City, State" />
+            </label>
+          </div>
+          <label>
+            <span class="sr-only">Budget</span>
+            <select name="budget">
+              <option value="" disabled selected>Budget Range</option>
+              <option>$1,000–$2,000</option>
+              <option>$2,000–$3,500</option>
+              <option>$3,500–$5,000</option>
+              <option>$5,000+</option>
+            </select>
+          </label>
+          <label>
+            <span class="sr-only">Message</span>
+            <textarea name="message" rows="5" placeholder="Tell us about your event"></textarea>
+          </label>
+          <button class="btn" type="submit">Send Request</button>
+        </form>
+        <p class="muted" style="font-size:.85rem;margin-top:.6rem">No account needed: Formspree forwards messages to your email.</p>
+      </div>
+
+      <div class="card">
+        <h2>Contact Details</h2>
+        <ul class="list">
+          <li>Email: <a href="mailto:ambassadoorz.band@gmail.com">ambassadoorz.band@gmail.com</a></li>
+          <li>Instagram: <a href="#">@ambassadoorzband</a></li>
+          <li>Facebook: <a href="#">facebook.com/ambassadoorz</a></li>
+          <li>YouTube: <a href="#">youtube.com/@ambassadoorz</a></li>
+        </ul>
+        <div class="card" style="margin-top:1rem;background:#0f0f16">
+          <h3 style="margin:0 0 .4rem 0">Quick Tech Specs</h3>
+          <ul class="list">
+            <li>Power: (2) 20A circuits minimum</li>
+            <li>Stage: 16' x 12' preferred</li>
+            <li>Backline: available upon request</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container" style="display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:1rem">
+      <div>&copy; <span id="year"></span> <strong>Ambassadoorz</strong>. All rights reserved.</div>
+      <div style="display:flex;gap:.8rem;align-items:center">
+        <a class="pill" href="#epk">Download EPK</a>
+        <a class="pill" href="#contact">Book Us</a>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+
+  <!-- USAGE NOTES
+  1) Replace placeholder links (#) with real files and social URLs.
+  2) Swap the hero and gallery images with your band photos.
+  3) For the contact form, create a free Formspree form and paste your form endpoint.
+  4) To publish free: GitHub Pages or Netlify.
+  -->
+</body>
+</html>
